@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,36 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-        table, th, td {
+
+        table,
+        th,
+        td {
             border: 1px solid #ddd;
         }
-        th, td {
+
+        th,
+        td {
             padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #f4f4f4;
         }
+
         .container {
             max-width: 800px;
             margin: auto;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Lista de Personas</h1>
@@ -40,6 +50,7 @@
                     <th>Nombre</th>
                     <th>Edad</th>
                     <th>País</th>
+                    <th>Imagen</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,9 +61,9 @@
 
     <script>
         // Esta función se ejecutará al cargar la página
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // URL de tu API real desplegada en Vercel
-            const url = "https://deploy-kappa-hazel.vercel.app/";  // Reemplaza con tu URL real de API
+            const url = "https://desplieguevercel-tau.vercel.app/";  // Reemplaza con tu URL real de API
 
             // Realiza la solicitud GET a tu API
             fetch(url)
@@ -75,6 +86,9 @@
                             <td>${persona.nombre}</td>
                             <td>${persona.edad}</td>
                             <td>${persona.pais}</td>
+                            <td><img src="${persona.image}" alt="trulli" widht="100"></td>
+
+                            
                         `;
                     });
                 })
@@ -82,4 +96,5 @@
         });
     </script>
 </body>
+
 </html>
