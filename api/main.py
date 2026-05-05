@@ -22,7 +22,7 @@ app.add_middleware(
 
 # Datos
 datos = [
-    {"id": 1, "nombre": "EL PONCHO", "edad": 25, "pais": "GUACOCHE", "image": "https://pixabay.com/es/vectors/camafeo-mujer-ni%c3%b1a-perfil-silueta-2023867/"},
+    {"id": 1, "nombre": "EL PONCHO", "edad": 25, "pais": "GUACOCHE", "image": "https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png"},
     {"id": 2, "nombre": "EL PEPO", "edad": 30, "pais": "EL TOTUMO", "image": "https://pixabay.com/es/vectors/camafeo-mujer-ni%c3%b1a-perfil-silueta-2023867/"},
     {"id": 3, "nombre": "EL MENBER", "edad": 22, "pais": "TOCAINA", "image": "https://pixabay.com/es/vectors/camafeo-mujer-ni%c3%b1a-perfil-silueta-2023867/"},
     {"id": 4, "nombre": "LA MARIA", "edad": 28, "pais": "MOROCHOA", "image": "https://pixabay.com/es/vectors/camafeo-mujer-ni%c3%b1a-perfil-silueta-2023867/"},
